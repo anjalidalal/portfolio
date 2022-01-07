@@ -1,0 +1,399 @@
+* {
+  margin: 0%;
+}
+body {
+  box-sizing: border-box;
+  background-color: white;
+  font-family: Poppins;
+}
+html{
+  scroll-behavior: smooth;
+}
+:root {
+  --seaGreen: #61892f;
+  --lightSeaGreen: #86c232;
+  --lightBlack: #222629;
+  --darkGrey: #474b4f;
+  --lightGrey: #6b6e70;
+  --whitegrey: #d6d6d7;
+}
+.homepage {
+  min-height: 100vh;
+  background-image: url(https://lh3.googleusercontent.com/g3r6M0sUB8qHzwCP1FtGHoZ2ML3RnX2ehIoDEmwheAHuCz0HLhD0mWsGSRbTi0l9b8J88XRq-qIETw4Kjf4xBKr3O9Mql5yJ_CDr4AlbjW_R3yi__pgUlw92Vneem30hwyw403I0H4anEVkuddZmgESt6dWOnayeFuG7Q3hwMRbOFLsJhN-5zOlZPN4LlUsTmLSzlXDUo3kJlaqGfyqJ_UCa6fPEIXVoUd3vBbr4TAEbUxWspxnc7cHccIoXuKYplunfCC77dSNdCeeBv3tgoN7CbWN_GW6taWMZFCkSMx62X-e7Iz7X4ajHoLEH1VxiATsihkiPRB5PZJh7CPzW4pdyKe3l2rSHstMSV1MdtF4JwQb8sZ58km3sIZ3hUVIls0R7EiYgnMsWSBvqUlaMJP1j-ZO3DjL5J2siWUauhGjdT-Bg9-FydAxm_xB--cUKBnIqvkxkaFTV6eYudKDHdzoXGPB1LqCdIdzPc2x_sJw01yp0Rwm1FNpiGDaHY7Xx-HmGFiN6SQIxq2tdByfA6ZTczJbfGOYZiDNBvIM2AasmUsWgfH0HwzPdHZU0GlRoDNHrz3fnRw8epUEaVi9fFVsDBFPtTImFnHt4hucRtaXD8w0ShHYmVZ0XMUXbVcomJjWZLLG-Pd5RZg9h9HZO-Y1e3gnc2TggL0SgGDpBXz9WnnsEhgbltWM-qnZF0eiBxEiNpnKTq7wRIMcqIIWxgW3I=w1433-h780-no?authuser=0);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.item {
+  display: none;
+}
+.portfolio {
+  font-weight: 800;
+  font-size: 28px;
+  color: var(--lightSeaGreen);
+}
+.header {
+  padding: 10px;
+  align-items: center;
+}
+.skills > a,
+.hobbies > a,
+.project > a,
+.contact > a,
+.home > a {
+  color: var(--lightSeaGreen);
+  font-size: 25px;
+}
+a:link {
+  text-decoration: none;
+}
+.nav {
+  display: flex;
+  flex-direction: column;
+  row-gap: 4px;
+}
+.items {
+  background-color: var(--lightBlack);
+  z-index: 1;
+  position: absolute;
+  width: 100%;
+  height: 86vh;
+  top: 67px;
+  left: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 34px;
+  font-size: 24px;
+}
+.nav > div {
+  width: 20px;
+  height: 3px;
+  background-color: var(--lightSeaGreen);
+}
+.image {
+  position: relative;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+.bio > h1 {
+  font-size: 49px;
+  color: whitesmoke;
+  text-align: center;
+}
+.bio > h3 {
+  font-weight: lighter;
+  font-size: 30px;
+  font-family: "Brush Script MT", cursive;
+  color: rgba(245, 245, 245, 0.705);
+  text-align: center;
+}
+.bio > p {
+  padding: 20px 40px;
+  text-align: center;
+  font-size: 10px;
+  color: var(--lightSeaGreen);
+}
+.bio {
+  padding: 80px 0px;
+}
+/* skills section */
+.skills-page {
+  background-color: var(--lightSeaGreen);
+}
+.skills-page > h1 {
+  font-size: 44px;
+  font-family: cursive;
+  text-align: center;
+  padding: 20px 0px;
+}
+.icon {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  align-items: center;
+  padding-bottom: 10px;
+}
+.line {
+  width: 200px;
+  height: 8px;
+  border: 2px solid black;
+  border-radius: 18px;
+}
+.green-5,
+.green-4 {
+  width: 180px;
+  background-color: black;
+  height: 8px;
+}
+.green-3,
+.green-1 {
+  width: 140px;
+  background-color: black;
+  height: 8px;
+}
+.green-2 {
+  width: 90px;
+  background-color: black;
+  height: 8px;
+}
+/* hobbies section */
+.hobbies-page {
+  background-color: var(--lightBlack);
+  color: var(--darkGrey);
+  text-align: center;
+  padding-bottom: 20px;
+}
+.hobbies-page > h1 {
+  color: var(--whitegrey);
+  font-family: cursive;
+  padding-top: 20px;
+}
+.articles {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.hobby-image > img {
+  width: 250px;
+  height: 280px;
+  object-fit: cover;
+  padding: 10px;
+  border-radius: 18px;
+}
+.hobby-image > h1 {
+  font-family: cursive;
+}
+.hobby-image > p {
+  font-size: 12px;
+  padding: 10px;
+  font-weight: lighter;
+}
+.hobby-image {
+  background-color: var(--whitegrey);
+  border-radius: 18px;
+}
+.hobbies-page > p {
+  color: var(--whitegrey);
+  font-family: "Brush Script MT", cursive;
+  font-size: 17px;
+  padding: 0px 20px;
+  padding-bottom: 20px;
+}
+/* project section */
+.project-page {
+  background-color: white;
+  padding: 20px;
+}
+.tags,
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+.project-page > h1 {
+  color: var(--seaGreen);
+  text-align: center;
+  font-size: 45px;
+  padding-bottom: 30px;
+  font-family: cursive;
+}
+.tag > img {
+  width: 230px;
+  height: 200px;
+  border-radius: 16px;
+  padding: 10px;
+}
+.tag {
+  background-color: rgba(128, 128, 128, 0.63);
+  border-radius: 10px;
+  width: 250px;
+}
+.tag > p {
+  font-size: 10px;
+  padding: 3px 10px;
+}
+.tag > h1 {
+  font-size: 22px;
+  padding: 5px 10px;
+  font-family: cursive;
+  color: var(--seaGreen);
+}
+.btn {
+  display: flex;
+  padding: 10px;
+  justify-content: space-between;
+}
+#demo > a{
+  color: var(--whitegrey);
+  font-size: 18px;
+  font-weight: 600;
+}
+a:link{
+  text-decoration: none;
+}
+.demo > button{
+  background-color: var(--seaGreen);
+  border: none;
+  border-radius: 12px;
+  width: 100px;
+  height: 40px;
+  color: black;
+}
+.code > button{
+  border: 4px solid #61892f;
+  border-radius: 12px;
+  width: 100px;
+  height: 40px;
+}
+.butn > a{
+  color: var(--seaGreen);
+  font-weight: 600;
+}
+/* contact part */
+.contact-page{
+  background-color: var(--lightBlack);
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+@media (min-width: 768px) {
+  .item {
+    display: flex;
+    gap: 45px;
+  }
+  .nav {
+    display: none;
+  }
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+  }
+  .bio > h1 {
+    font-size: 70px;
+    letter-spacing: 6px;
+    color: whitesmoke;
+    text-align: center;
+  }
+  .bio > h3 {
+    font-weight: lighter;
+    font-size: 60px;
+    line-height: 22px;
+    padding: 20px 0px;
+    font-family: "Brush Script MT", cursive;
+    color: rgb(245, 245, 245);
+    text-align: center;
+  }
+  .bio > p {
+    margin: auto;
+    text-align: center;
+    font-size: 17px;
+    padding: 30px 140px;
+    color: var(--lightSeaGreen);
+  }
+  .bio {
+    margin-top: 60px;
+    margin-bottom: 0%;
+  }
+  .i > img {
+    width: 75px;
+  }
+  .icon {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    align-items: center;
+    padding-bottom: 10px;
+  }
+  .skills-page > h1 {
+    font-size: 60px;
+    text-align: center;
+    padding: 20px 0px;
+  }
+  .line {
+    width: 450px;
+    height: 15px;
+    border: 2px solid black;
+    border-radius: 18px;
+  }
+  .green-5,
+  .green-4 {
+    width: 380px;
+    background-color: black;
+    height: 15px;
+    border-radius: 18px;
+  }
+  .green-3,
+  .green-1 {
+    width: 330px;
+    background-color: black;
+    height: 15px;
+    border-radius: 18px;
+  }
+  .green-2 {
+    width: 230px;
+    background-color: black;
+    height: 15px;
+    border-radius: 18px;
+  }
+  /* hobbies section */
+  .articles {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding-bottom: 10px;
+  }
+  .hobby-image > img {
+    width: 230px;
+    height: 230px;
+    object-fit: cover;
+    padding: 10px;
+    border-radius: 18px;
+  }
+  .hobbies-page > h1 {
+    color: var(--whitegrey);
+    font-family: cursive;
+    font-size: 50px;
+    padding-top: 30px;
+  }
+  .hobbies-page > p {
+    color: var(--whitegrey);
+    font-family: "Brush Script MT", cursive;
+    font-size: 30px;
+    padding-top: 10px;
+    padding-bottom: 55px;
+  }
+  /* project section */
+  .project-page {
+    background-color: var(--whitegrey);
+    padding: 20px;
+  }
+  .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+  }
+  .tag > img {
+    width: 230px;
+    height: 180px;
+    border-radius: 16px;
+    padding: 10px;
+  }
+  .tag{
+    width: 250px;
+  }
+}
